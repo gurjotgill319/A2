@@ -1,43 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+ 
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Assginment 2-6210</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+
+ 
+  <!-- Bootstrap core CSS -->
+  
+  <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="" crossorigin="anonymous">
+ 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+    sizes="180x180">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+    type="image/png">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+    type="image/png">
+  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+    color="#7952b3">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <header><div class="bg-dark collapse show" id="navbarHeader"><div class="container">
+    <div class="row"><div class="col-sm-8 col-md-7 py-4">
+      <h4 class="text-white">About </h4>
+      <p class="text-muted">Subject-6010</p>
+    <p>Assignment 2</p>
+  <p>20 SCP Files</p></div><div class="col-sm-4 offset-md-1 py-4"><h4 class="text-white">Contact</h4><ul class="list-unstyled"><li><a href="#" class="text-white">Submitted By Gagandeep Singh
+  </a></li><li><a href="#" class="text-white">Gurjot SIngh</a></li>
+        <li><a href="#" class="text-white">Inderjit Singh</a></li></ul></div></div></div></div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container"><a href="#" class="navbar-brand d-flex align-items-center"><svg class="svg-icon" viewBox="0 0 20 20"><path d="M14.911,1.295H5.09c-0.737,0-1.339,0.603-1.339,1.339v14.733c0,0.736,0.603,1.338,1.339,1.338h9.821c0.737,0,1.339-0.602,1.339-1.338V2.634C16.25,1.898,15.648,1.295,14.911,1.295 M15.357,17.367c0,0.24-0.205,0.445-0.446,0.445H5.09c-0.241,0-0.446-0.205-0.446-0.445v-0.893h10.714V17.367z M15.357,15.58H4.644V4.42h10.714V15.58z M15.357,3.527H4.644V2.634c0-0.241,0.205-0.446,0.446-0.446h9.821c0.241,0,0.446,0.206,0.446,0.446V3.527z"></path></svg>
+      <strong>SCP Files</strong></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button></div></div></header>
+
+  <style>
+    .boday {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none; 
+    }
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+ 
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+ 
+    .svg-icon {
+      width: 1em;
+      height: 1em;
+    }
+ 
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+      fill: #dd0e0e;
+    }
+ 
+    .svg-icon circle {
+      stroke: #e01414;
+      stroke-width: 1;
+    }
+  </style>
+  <script>
+          
+    // Get HTML head element
+    var head = document.getElementsByTagName('HEAD')[0]; 
+     
+ 
+    // Create new link Element
+    var link = document.createElement('link');
+ 
+    // set the attributes for link element 
+    link.rel = 'stylesheet'; 
+  
+    link.type = 'text/css';
+  
+    link.href = 'style.css'; 
+ 
+    // Append link element to HTML head
+    head.appendChild(link); 
+</script>
+
+  
+  <section className="py-5 text-center container">
+  <div className="row py-lg-5">
+  <div className="col-lg-6 col-md-8 mx-auto">
+    
+    <div className="card text-white bg-dark mb-3"></div>
+    <img className="card-img-top" src="image/SCP_-_Containment_Breach.jpg" alt="SCP Foundation" ></img>
+    
+    <p className="card-text">The data shown in this application is 20 SCP Files with Iamges</p>
+    </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  
+  <div id="root"></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+
+
+ 
+  <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity=""
+    crossorigin="anonymous"></script>
+ 
+</body>
+<!-- Footer -->
+<footer>
+  <h1>Name-Gagandeep Singh </h1>
+  <h2>Student ID-30029497
+</h2>
+  <h2>Subject number - 6210</h2>
+</footer>
+ 
 </html>

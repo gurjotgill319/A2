@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import SCP from "./SCP";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component
+{
+    render()
+    {
+      return(
+        <SCP scp={ this.state.scp}/>
+
+      );
+    }
+    state = { scp: []}
+
+    componentDidMount()
+    {
+      fetch('https://database-bbd9.restdb.io/rest/content',
+      {
+        method: 'GET',
+        headers: {
+          "cache-control": "no-cache",
+          "x-apikey": "60bee2b9f2a01c34b8ed3636",
+          "content-type": "application/json"
+        }
+      })
+      .then(result => result.json())
+      .then((data) => { this.setState({scp: data})})
+
+      .catch(console.log);
+    }
+   
 }
+
 
 export default App;
